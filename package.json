@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href https://rohitkrishna094.github.io/interview-questions-list/dist/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

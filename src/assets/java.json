@@ -7,4 +7,19 @@
 }, {
   "question": "What is singleton class and how can we make a class singleton?",
   "answer": "Singleton class is a class whose only one instance can be created at any given time, in one JVM. A class can be made singleton by making its constructor private."
+}, {
+  "question": "Explain JDK, JRE, JVM?",
+  "answer": "JDK is the tool necessary to compile, document and package Java programs. \nJRE refers to a runtime environment in which java bytecode can be executed. It implements the JVM and provides all the class libraries and other support files that JVM uses at runtime. So JRE is a software package that contains what is required to run a Java program. Basically it's an implementation of the JVM which physically exists.  \nJVM is an abstract machine. It is a specification that provides run-time environment in which java bytecode can be executed. JVM follows three notations: Specification(document that describes the implementation of the Java virtual machine), Implementation(program that meets the requirements of JVM specification) and Runtime Instance(instance of JVM is created whenever you write a java command on the command prompt and run class)."
+}, {
+  "question": "What are wrapper classes?",
+  "answer": "Wrapper classes converts the java primitives into the reference types(objects). Every primitive data type has a class dedicated to it. These are known as wrapper classes because they wrap the primitive data type into an object of that class. Boolean, Byte, Character, Integer, Float, Double, Long, Short are wrapper classes."
+}, {
+  "question": "What are constructors in Java?",
+  "answer": "It refers to a block of code which is used to initialize an object. It must have the same name as that of the class. Also it has no return type and it is automatically called when an object is created. There are two types of constructors namely default constructor and parameterized constructor."
+}, {
+  "question": "What is singleton class and how can we make a class singleton?",
+  "answer": "Singleton class is a class whose only one instace can be created at any given time, in one JVM. A class can be made singleton by making its constructor private."
+}, {
+  "question": "",
+  "answer": ""
 }]
