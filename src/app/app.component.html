@@ -1,12 +1,5 @@
-<div class="container pt-5">
-  <div class="card mb-2" *ngFor="let d of data">
-    <div class="card-header  clickable" (click)="questionClick(d)">
-      <h5 class="card-title text-primary" style="display: inline">{{d.question}}
-        <i class="fas fa-caret-down" style="padding-left: 0%"></i>
-      </h5>
-    </div>
-    <div class="card-body" [hidden]="!d.visible">
-      <p class="card-text">{{d.answer}}</p>
-    </div>
-  </div>
+<div class="container pt-2">
+  <h2 class="text-center">Interview Questions</h2>
 </div>
+<hr>
+<app-main></app-main>
