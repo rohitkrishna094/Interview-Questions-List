@@ -1,0 +1,10 @@
+[{
+  "question": "What is Spring Framework?",
+  "answer": "Spring is the most broadly used framework for the development of Java Enterprise Edition applications. The core features of Spring can be used in developing any Java application. We can use its extensions for building various web applications on top of the Java EE platform, or we may just use its dependency injection provisions in simple standalone applications."
+}, {
+  "question": "What are the benefits of using Spring?",
+  "answer": "Spring targets to make Java EE development easier. Here are the advantages of using it:\n* Lightweight: there is a slight overhead of using the framework in development \n* Inversion of Control (IoC): Spring container takes care of wiring dependencies of various objects, instead of creating or looking for dependent objects \n*Aspect Oriented Programming (AOP): Spring supports AOP to separate business logic from system services\n*IoC container: it manages Spring Bean life cycle and project specific configurations\n*MVC framework: that is used to create web applications or RESTful web services, capable of returning XML/JSON responses\n*Transaction management: reduces the amount of boiler-plate code in JDBC operations, file uploading, etc., either by using Java annotations or by Spring Bean XML configuration file\n*Exception Handling: Spring provides a convenient API for translating technology-specific exceptions into unchecked exceptions."
+}, {
+  "question": "",
+  "answer": ""
+}]

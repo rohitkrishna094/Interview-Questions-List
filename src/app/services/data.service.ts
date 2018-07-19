@@ -8,7 +8,7 @@ import { Observable } from '../../../node_modules/rxjs';
 export class DataService {
   constructor(private http: HttpClient) {}
 
-  public getJSON(): Observable<any> {
-    return this.http.get('assets/java.json');
+  public getJSON(s): Observable<any> {
+    return this.http.get(`assets/${s}.json`);
   }
 }

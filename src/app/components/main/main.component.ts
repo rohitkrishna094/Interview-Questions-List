@@ -11,7 +11,7 @@ export class MainComponent implements OnInit {
   data;
 
   constructor(private dataService: DataService) {
-    this.files = ['Java', 'Spring', 'Hibernate'];
+    this.files = ['java', 'spring', 'hibernate'];
   }
 
   questionClick(d) {
@@ -24,12 +24,14 @@ export class MainComponent implements OnInit {
   }
 
   fileChange(file) {
-    console.log(file);
-    // start here
+    this.dataService.getJSON(file).subscribe(d => {
+      d.map(o => (o.visible = false));
+      this.data = d;
+    });
   }
 
   ngOnInit() {
-    this.dataService.getJSON().subscribe(d => {
+    this.dataService.getJSON('java').subscribe(d => {
       d.map(o => (o.visible = false));
       this.data = d;
     });
