@@ -20,6 +20,150 @@
   "question": "What is singleton class and how can we make a class singleton?",
   "answer": "Singleton class is a class whose only one instace can be created at any given time, in one JVM. A class can be made singleton by making its constructor private."
 }, {
+  "question": "Is main method compulsory in Java?",
+  "answer": "Prior to JDK 5, it was not. We could have used a static block and it would have compiled fine. But from jdk6 main method is mandatory."
+}, {
+  "question": "How are Java objects stored in memory?",
+  "answer": "All objects are dynamically allocated on Heap."
+}, {
+  "question": "How to swap objects in Java?",
+  "answer": "You can use wrapper classes. Remember the example of Car and CarWrapper Classes."
+}, {
+  "question": "What is Runtime Polymorphism or Dynamic Method Dispatch?",
+  "answer": "Method Overriding is one of the ways java supports this. This is basically when a call to overriden method is resolved at runtime. Final, private and static methods cannot be overriden. Also the overriding method cannot have a more restrictive access modifier. That is if parent class has public access modifier, then child class cannot change it to protected or private."
+}, {
+  "question": "What is Compile Time Polymorphism?",
+  "answer": "Method Overloading. Also called as static Polymorphism. We cannot overload on return type. We cant have two methods with same inputs but different return types coz compiler will be confused as to which method it should choose. We can also overload main method."
+},{
+  "question": "What are 7 non access modifiers?",
+  "answer": "static, final, abstract, synchronized, transient, volatile, native"
+}, {
+  "question": "What is hashcode method?",
+  "answer": "For every object, JVM generates a unique number which is hashcode. It doesnt represent the actual address of the object. Its just a representation. Its a native method because in Java its impossible to find address of an object, so it uses native languages like C or C++ to find address of the object."
+}, {
+  "question": "What is finalize method?",
+  "answer": "GC calls this method before garbage collecting. We should override this method to do any clean up required."
+}, {
+  "question": "Name some important methods of Object class?",
+  "answer": "hashcode, equals, clone, toString, notify, notifyAll, wait, finalize"
+}, {
+  "question": "What is Double.compare?",
+  "answer": "It is one of the best ways to compare double values."
+}, {
+  "question": "Initializer block in java?",
+  "answer": "It is a block of code which is executed before constructor. We use {} for that. It doesnt have to be static. If we want to execute some code once for all objects of a class, then we can use static block."
+}, {
+  "question": "Why is java not a pure oop language?",
+  "answer": "It doesnt support two things namely: All predefined types are not objects coz we have primitive types as well and all operations performed on objects are not only through methods exposed at objects for example if we have static keyword, we can use that method directly. smalltalk is a pure oop language unlike c++ or java."
+}, {
+  "question": "What is instanceof operator?",
+  "answer": "It is used for type checking. It can be used like this: obj1 instanceof Person => This would return true or false depending on whether obj1 is of type Person or not"
+}, {
+  "question": "Right shift operator?",
+  "answer": ">> is signed right shift operator while >>> is an unsigned right shift operator."
+}, {
+  "question": "StringBuffer vs StringBuilder?",
+  "answer": "StringBuffer is thread safe but slow while StringBuilder is not thread safe hence faster."
+}, {
+  "question": "How to convert Integer to String?",
+  "answer": "Integer.toString(1234) or String.valueOf(1234) or Integer(1234).toString(). The 3rd one is no efficient as instance of Integer class is also created. You can also use DecimalFormat or special radix or StringBuffer/StringBuilder to do this task."
+}, {
+  "question": "How to convert String to Integer?",
+  "answer": "Integer.parseInt("20") or Integer.valueOf("20"); valueOf internally calls parseInt."
+}, {
+  "question": "Scanner next vs nextLine?",
+  "answer": "next reads only till space. It wont read two words separated by space. also it places the cursor in the same line after reading."
+}, {
+  "question": "How to compare two arrays?",
+  "answer": "If we compare using == we will only compare their references. To compare their contents as well, we can simply use a for loop or java provides a method called Array.equals(arr1, arr2). However it doesnt do deep comparison that is if arrays contain arrays, then it will compare the top level. For that we can use Array.deepEquals(arr1, arr2) method."
+}, {
+  "question": "Is array an object in Java?",
+  "answer": "Yes"
+}, {
+  "question": "Convert arraylist to array?",
+  "answer": "We can use toArray which converts to Object[]. If list is arraylist then we can use Object[] objects= list.toArray();"
+}, {
+  "question": "Tell me about Arrays class which is part of java.util package?",
+  "answer": "Arrays.toString(a); Arrays.sort(a); Arrays.sort(a, fromIndex, toIndex); Arrays.binarySearch(a, 9) => will search for 9 in a SORTED array; Arrays.copyOf(originalArray, newLength); Arrays.copyOfRange(originalArray, fromIndex, toIndex); Arrays.fill(a, value); Arrays.fill(a, fromIndex, toIndex,value); Arrays.asList(T... a);"
+}, {
+  "question": "How to return array as list?",
+  "answer": "Arrays.asList(a);"
+}, {
+  "question": "Arrays.sort()?",
+  "answer": "We can sort the array using Arrays.sort(a) or part of the array using Arrays.sort(a, fromIndex, toIndex); Also reverse order using Arrays.sort(a, Collections.reverseOrder());"
+}, {
+  "question": "Arrays.sort vs Collections.sort?",
+  "answer": "Arrays.sort works for primitive datatypes also while Collections.sort only works for objects"
+}, {
+  "question": "Note about super?",
+  "answer": "Call to super() must be first statement in Derived(Student) Class constructor. If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass. If the superclass does not have a no-argument constructor, you will get a compile-time error. Object does have such a constructor, so if Object is the only superclass, there is no problem."
+}, {
+  "question": "What are static nested classes?",
+  "answer": "We cannot declare top level classes as static but can decalare nested classes as static. Such classes are nested static classes. Inner class(non static) can access both static and non-static members of Outer class. A static class cannot access non-static members of Outer class. Nested static class doesnt need reference to Outer class. but non static nested class or inner class needs Outer class reference. An instance of Inner class cannot be created without an instance of Outer class. Definitely read this: https://www.geeksforgeeks.org/static-class-in-java/ "
+}, {
+  "question": "Final keyword in foreach loop?",
+  "answer": "final with foreach loop : final with for-each statement is a legal statement. Since the i variable goes out of scope with each iteration of the loop, it is actually re-declaration each iteration, allowing the same token (i.e. i) to be used to represent multiple variables."
+}, {
+  "question": "Explain transient keyword in Java?",
+  "answer": " At the time of serialization, if we don’t want to save value of a particular variable in a file, then we use transient keyword. When JVM comes across transient keyword, it ignores original value of the variable and save default value of that variable data type."
+}, {
+  "question": "Explain volatile keyword in Java?",
+  "answer": "Its another way like synchronized to make class thread safe."
+}, {
+  "question": "Explain strictfp keyword in Java?",
+  "answer": "strictfp is a keyword in java used for restricting floating-point calculations and ensuring same result on every platform while performing operations in the floating-point variable."
+}, {
+  "question": "Are private methods final?",
+  "answer": "Yes they are implicitly final and they cannot be overridden by subclasses."
+}, {
+  "question": "Explain default methods in Java?",
+  "answer": "Interfaces can now have concrete methods which have default access modifier. The default methods were introduced to provide backward comparability so that existing intefaces can use the lambda expressions without implementing the methods in the implementation class. Default methods are also known as defender methods or virtual extension methods."
+}, {
+  "question": "Static methods in Interfaces?",
+  "answer": "Interfaces can have static methods as well. They can be used as static methods in a class."
+}, {
+  "question": "How to make a singleton class?",
+  "answer": "Make constructor as private and write a static method that has return type object of this singleton class. "
+}, {
+  "question": "Regular Expressions Synopsis?",
+  "answer": "https://www.geeksforgeeks.org/write-regular-expressions/"
+}, {
+  "question": "",
+  "answer": ""
+}, {
+  "question": "",
+  "answer": ""
+}, {
+  "question": "",
+  "answer": ""
+}, {
+  "question": "",
+  "answer": ""
+}, {
+  "question": "",
+  "answer": ""
+}, {
+  "question": "",
+  "answer": ""
+}, {
+  "question": "",
+  "answer": ""
+}, {
+  "question": "",
+  "answer": ""
+}, {
+  "question": "",
+  "answer": ""
+}, {
+  "question": "",
+  "answer": ""
+}, {
+  "question": "",
+  "answer": ""
+}, {
+  "question": "",
+  "answer": ""
+}, {
   "question": "",
   "answer": ""
 }]
