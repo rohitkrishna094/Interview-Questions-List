@@ -69,7 +69,7 @@
   "answer": "Integer.toString(1234) or String.valueOf(1234) or Integer(1234).toString(). The 3rd one is no efficient as instance of Integer class is also created. You can also use DecimalFormat or special radix or StringBuffer/StringBuilder to do this task."
 }, {
   "question": "How to convert String to Integer?",
-  "answer": "Integer.parseInt("20") or Integer.valueOf("20"); valueOf internally calls parseInt."
+  "answer": "Integer.parseInt(\"20\") or Integer.valueOf(\"20\"); valueOf internally calls parseInt."
 }, {
   "question": "Scanner next vs nextLine?",
   "answer": "next reads only till space. It wont read two words separated by space. also it places the cursor in the same line after reading."
