@@ -128,41 +128,41 @@
   "question": "Regular Expressions Synopsis?",
   "answer": "https://www.geeksforgeeks.org/write-regular-expressions/"
 }, {
-  "question": "",
-  "answer": ""
+  "question": "Multicatch exception?",
+  "answer": "After java 7.0 we can catch multiple exceptions in single catch block like this. catch(NumberFormatException | ArithmeticException). We use a pipe operator"
 }, {
-  "question": "",
-  "answer": ""
+  "question": "Trick about Java Object creation of Inherited class?",
+  "answer": "When subclass object is created, a separate object of superclass object will not be created. Only a subclass object that has super class variables is created. You can test this out by printing hasCode and seeing that it will have same value."
 }, {
-  "question": "",
-  "answer": ""
+  "question": "Interfaces vs abstract class?",
+  "answer": "abstract class may contain non-final variables, but interfaces will only have variables that are final public and static. And some extra info look it up online."
 }, {
-  "question": "",
-  "answer": ""
+  "question": "Access specifier in interfaces?",
+  "answer": "All methods are public even if not specified. All fields are public static final even if not specified. https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/"
 }, {
-  "question": "",
-  "answer": ""
+  "question": "What are functional interfaces?",
+  "answer": "Interfaces with only one method and any number of static or default methods. Also these interfaces may have @Functional annotation. java.util package has many other built in functional interfaces"
 }, {
-  "question": "",
-  "answer": ""
+  "question": "What are Marker interface?",
+  "answer": "Interfaces with nothing in them. Cloneable, Serializable, Remote are some such interface examples. It adds metadata to class. A class implementing Cloneable would ideally override Object.Clone() method as well."
 }, {
-  "question": "",
-  "answer": ""
+  "question": "Which memory does gc free?",
+  "answer": "garbage collector frees heap memory"
 }, {
-  "question": "",
-  "answer": ""
+  "question": "Different ways to make object eligible for GC?",
+  "answer": "There are 5 ways namely: Anonymous object, Nulliyfying the reference variable, re-assigning the reference variable, object creation inside a method, Island of Isolation(object a refers to object b, object b refers to object a but no other objects refer to either of these)"
 }, {
-  "question": "",
-  "answer": ""
+  "question": "How to request gc to run?",
+  "answer": "System.gc() or Runtime.getRuntime.gc()"
 }, {
-  "question": "",
-  "answer": ""
+  "question": "Difference between System.gc() and Runtime.getRuntime.gc()?",
+  "answer": "Both are same, except that System.gc() is a static method while the other one is instance method. System.gc internally calls Runtime.getRuntime.gc() method anyway."
 }, {
-  "question": "",
-  "answer": ""
+  "question": "What is finalize method?",
+  "answer": "Just before destroying an object, gc calls finalize method on that object. We can override that method to do any cleanup. If an uncaught exception is thrown by the finalize() method, the exception is ignored and finalization of that object terminates."
 }, {
-  "question": "",
-  "answer": ""
+  "question": "ARM(Automatic resource management) with try-with-resource statement in java?",
+  "answer": "Any object that implements java.lang.AutoCloseable & overrides close method is a resource(including user defined objects). We can use try(BufferedReader b = new BufferedReader(new FileReader(str){// do stuff}catch(Exception E){// handle exception}. After this BufferedReader object is closed."
 }, {
   "question": "",
   "answer": ""
